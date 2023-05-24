@@ -19,7 +19,10 @@ RSpec.describe University do
     expect(@university_of_denver).to be_a(University)
   end
 
-  xit 'can list all grades in courses' do
+  it 'can list all grades in courses' do
+    @gradebook.add_course(@course1)
+    @course1.enroll(@student1)
+    @student1.log_score(83.5)
     grade_data = {@course1 => [83.5]}
     expect(@university_of_denver.all_grades).to eq(grade_data)
   end
