@@ -11,11 +11,11 @@ class Course
   end
 
   def full?
-    @full
+    @students.length >= @capacity
   end
 
-  def enroll
-    
+  def enroll(student)
+    @students << student
   end
 
 end
