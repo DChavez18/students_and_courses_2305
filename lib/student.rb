@@ -1,4 +1,5 @@
 class Student
+  
   attr_reader :name,
               :age,
               :scores
@@ -17,5 +18,4 @@ class Student
     total_score = @scores.sum
     grade = total_score.to_f/@scores.length
   end
- 
 end
