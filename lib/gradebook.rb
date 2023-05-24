@@ -28,5 +28,4 @@ class Gradebook
     end
     below_threshold_students
   end
-  
 end
